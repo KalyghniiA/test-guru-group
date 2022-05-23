@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Руководство по работе с проектом
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Данный проект создан с помощью [Create React App](https://github.com/facebook/create-react-app).
+Данный проект является тестовым заданием для организации ООО ГУРУ ГРУПП.
 
-## Available Scripts
+Технологии используемые на проекте:
+1) React 18
+2) React Router 6
+3) Redux Toolkit
+4) TypeScript
+5) Axios
+6) Swiper
 
-In the project directory, you can run:
 
-### `npm start`
+## Структура проекта
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+_Не удаляйте и не изменяйте папки и файлы:_
+_`.editorconfig`, `.gitattributes`, `.gitignore`, `package.json`._
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### public
 
-### `npm run build`
+Директория для размещения статичных ресурсов (шрифты, стили, изображения и так далее). Корневая директория проекта.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Обратите внимание**, файл `Readme.md`, в директории `public`, содержит описание подготовительного процесса, который вам необходимо выполнить перед тем, как приступать к работе над проектом.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### src
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+В директории размещаются исходный код проекта: компоненты, файлы с тестами, модули и так далее. Структура директории `src` может быть произвольной.
 
-### `npm run eject`
+## Сценарии
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+После создания проекта вам доступны следующие сценарии. Обратите внимание, для запуска сценария, вы должны находится в директории проекта (`./project`).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Запуск проекта
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+После запуска, приложение доступно для просмотра в браузере по адресу [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+При сохранении изменений, проект перезапускается и обновляется в браузере. Таким образом, вы можете следить за разработкой проекта в режиме реального времени.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Обратите внимание**, режим разработки настроен таким образом, при котором ошибки, найденные статическим анализатором кода **ESLint**, отображаются в той же вкладке браузера, в которой запущен проект.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Проверка линтером
+
+```bash
+npm run lint
+```
+
+Запуск проверки проекта статическим анализатором кода **ESLint**.
+
+Анализ кода производится только в файлах, которые находятся в директории `src`.
+
+**Обратите внимание**, при запуске данной команды, ошибки выводятся в терминал.
+
+### Сборка проекта
+
+```bash
+npm run build
+```
+
+Запуск сборки приложения.
+
+В процессе сборки приложения, код приложения оптимизируется и минимизируется, для достижения наилучшей производительности.
+
+Во время выполнения инструкций по сборке проекта, в корне проекта создается директория `build`, в которую будут помещены результирующие файлы. После сборки проект готов к публикации.
+
+Подробную информацию вы можете найти на странице [Развертывание проекта](https://facebook.github.io/create-react-app/docs/deployment).
+
+### Извлечение конфигурации проекта
+
+```bash
+npm run eject
+```
+
+**Обратите внимание**, при запуске команды `npm run eject` нет возможности вернуть внесённые изменения обратно!
+
+Выполнение данной команды, `react-scripts` скопирует все конфигурационные файлы и скрипты в корень проекта. Данный процесс позволяет получить полный контроль над конфигурацией проекта.
+
+Не используйте данную команду, если не уверены как именно она работает или к какому результату приведёт ее выполнение.

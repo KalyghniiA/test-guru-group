@@ -67,5 +67,5 @@
     "redux-devtools-extension": "2.13",
     "typescript": "^4.1.2"
   },
-  "homepage": "https://kalyghniia.github.io/test-guru-group/"
+  "homepage": "https://kalyghniia.github.io/test-guru-group/build/"
 }

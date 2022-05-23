@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-guru-group/static/css/main.03cd250c.css",
+    "main.js": "/test-guru-group/static/js/main.fb4fa4e1.js",
+    "index.html": "/test-guru-group/index.html",
+    "main.03cd250c.css.map": "/test-guru-group/static/css/main.03cd250c.css.map",
+    "main.fb4fa4e1.js.map": "/test-guru-group/static/js/main.fb4fa4e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03cd250c.css",
+    "static/js/main.fb4fa4e1.js"
+  ]
+}

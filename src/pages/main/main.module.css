@@ -1,0 +1,15 @@
+.main {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto 8px auto;
+  width: fit-content;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    margin: 0 auto 8px 32px;
+  }
+}
